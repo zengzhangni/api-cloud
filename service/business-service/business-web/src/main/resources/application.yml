@@ -1,0 +1,17 @@
+server:
+  port: 20055
+spring:
+  application:
+    name: web-service
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://39.96.63.222:20050/eureka/
+    registry-fetch-interval-seconds: 5
+
