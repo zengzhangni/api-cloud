@@ -18,8 +18,8 @@ spring:
 
 eureka:
   instance:
-    lease-renewal-interval-in-seconds: 5
-    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5 # 设置心跳的时间间隔（默认是30秒）
+    lease-expiration-duration-in-seconds: 15 # 如果现在超过了5秒的间隔（默认是90秒）
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
   client:
     registerWithEureka: true
@@ -42,3 +42,5 @@ mybatis-plus:
       id-type: AUTO
   mapper-locations: classpath:mapper/*.xml
   typeAliasesPackage: com.zzn.boot.*.model
+
+
