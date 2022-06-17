@@ -36,7 +36,7 @@
         <commons-httpclient.version>3.1</commons-httpclient.version>
 
         <lombok.version>1.16.18</lombok.version>
-        <fastjson.version>1.2.41</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <swagger.version>1.2.0.RELEASE</swagger.version>
 
         <!--common -->
